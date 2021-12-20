@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 
-app.use(requireHTTPS);
 app.use(express.static('./dist/angular-heroku'));
 
 app.get('/*', (req, res) =>
